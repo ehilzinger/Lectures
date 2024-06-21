@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# A brief intro to science
+# A Brief Intro to Science
 
 Let us start of with some good ol' definitions first - after all, we are trying to be serious here, right? To get started, let us define the term "science" according to the experience one might have:
 
@@ -29,5 +29,5 @@ No matter if you are a currently enrolled student at a university or just someon
 
 ## Why should you read on?
 
-Most probably you ended up here because somewhen in your life, someone told you to write a scientific paper - most probably related to some kind of academic achievement that you are pursuing. As this usually is not among the preferred student activities (and you most likely would rather be out doing other, more fun things currently) this guide aims to ease your pain by providing best practices when dealing with such science. Additionally, it tries to provide you with templates, methods and little helpers to make scientific writing not only bearable, but perhaps even fun! \
+Most probably you ended up here because somewhen in your life, someone told you to write a scientific paper - most probably related to some kind of academic achievement that you are pursuing. As this usually is not among the preferred student activities (and you most likely would rather be out doing other, more fun things currently) this guide aims to ease your pain by providing best practices when dealing with such science. Additionally, it tries to provide you with templates, methods and little helpers to make scientific writing not only bearable, but perhaps even fun! The author of all of this has extensive experience in writing and supervising scientific papers, having graded more than 30 papers so far - so all of this builds on the practical experience that accumulated over the past few years, so that you do not make the same mistakes that most students do.\
 If you do not feel like reading all of this, just skip ahead to whatever portion you deem necessary for your own success (they are all neatly organized in the sidebar).
