@@ -36,7 +36,7 @@ What commonly happens to aspiring researchers is that they tend to overthink the
 
 ![Topic vs. Title Meme with distracted boyfriend template](https://i.imgflip.com/8uk4nz.jpg)
 
-A good title should not take more than two lines - which is often not the case, as you will find out when we talk about [references](/docs/category/literature--references) - but for now, try to keep it rather that way. Additionally, think about the following title:
+A good title should not take more than two lines - which is often not the case, as you will find out when we talk about [references](/category/literature--references) - but for now, try to keep it rather that way. Additionally, think about the following title:
 > A Game of Thrones
 
 Does this create interest in you? Does it even make you excited? For scientific titles, we also aim at creating titles that catch the reader's eye - just not in the same way as with fantasy books. Your title should, nevertheless, draw attention of the prospective reader - after all, you also want them to be excited about the problem that you solve!

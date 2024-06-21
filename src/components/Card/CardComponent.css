@@ -1,0 +1,51 @@
+/* src/CardComponent.css */
+.card-link-wrapper {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  flex: 1 0 300px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  
+}
+
+:hover {
+  text-decoration: none;
+}
+
+.card-title {
+  margin: 0 0 8px;
+  font-size: 1.5em;
+}
+
+.card-text {
+  margin: 0 0 16px;
+  font-size: 1em;
+  color: #555;
+}
+
+@media (max-width: 1024px) {
+  .card-link-wrapper {
+    flex: 1 0 45%; /* Take up more width on medium screens */
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-link-wrapper {
+    flex: 1 0 100%; /* Take up full width on small screens */
+    max-width: 100%;
+  }
+}

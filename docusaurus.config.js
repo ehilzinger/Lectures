@@ -8,8 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Science for Beginners',
-  tagline: 'It ain\'t that hard',
+  title: 'Welcome to the Learning Matter Archive',
+  tagline: 'Home of Lecture Materials & Tutorials',
   favicon: 'img/favicon.ico',
   staticDirectories: ['public', 'static'],
 
