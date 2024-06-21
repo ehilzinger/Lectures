@@ -8,7 +8,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Welcome to the Learning Matter Archive',
+  title: 'Welcome to the Archive',
   tagline: 'Home of Lecture Materials & Tutorials',
   favicon: 'img/favicon.ico',
   staticDirectories: ['public', 'static'],
@@ -32,7 +32,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'de'],
   },
 
   presets: [
@@ -64,7 +64,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/logo.png',
       navbar: {
-        title: 'Learning Matter',
+        title: 'Home',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.png',
@@ -88,7 +88,23 @@ const config = {
             position: 'left',
             label: 'Distributed Systems',
           },
+          {
+            type: 'doc',
+            docId: 'softwareengineering/intro',
+            position: 'left',
+            label: 'Software Engineering',
+          },
+          {
+            type: 'doc',
+            docId: 'itmanagement/intro',
+            position: 'left',
+            label: 'IT Management',
+          },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          },
           {
             href: 'https://github.com/ehilzinger/Intro_to_Scientific_Work',
             label: 'GitHub',
