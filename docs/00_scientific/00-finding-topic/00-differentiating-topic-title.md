@@ -56,4 +56,6 @@ Let's take the following fictious title as an example:
 > A Study of Bacterial Growth in Controlled Environments
 
 Does this create excitement? Maybe it does, in case you are a biologists - but still, this title misses key information. It does not elaborate on **which** controlled environments or bacteria it talks about, it also does not mention what kind of study or methodology is used here. 
+It is therefore of crucial importance to include such necessary information in a title - opposed to what we see in fiction and fantasy, where the deliberately ommiting information adds additional suspense (we don't do that here).
 
+Here is a [checklist](/files/checklist_title.pdf) to figure out whether your title is short enough, catchy, and conveys all the necessary information.

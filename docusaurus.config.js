@@ -42,8 +42,9 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          routeBasePath: "/",
           editUrl:
-            'https://github.com/ehilzinger/Intro_to_Scientific_Work/blob/main',
+            'https://github.com/ehilzinger/Intro_to_Scientific_Work/tree/main',
         },
         blog: {
           showReadingTime: true,
@@ -70,10 +71,22 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            type: 'doc',
+            docId: 'scientific/intro',
             position: 'left',
             label: 'Scientific Basics',
+          },
+          {
+            type: 'doc',
+            docId: 'webprog/intro',
+            position: 'left',
+            label: 'Web Programming',
+          },
+          {
+            type: 'doc',
+            docId: 'distributedsystems/intro',
+            position: 'left',
+            label: 'Distributed Systems',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -91,7 +104,15 @@ const config = {
             items: [
               {
                 label: 'Scientific Basics',
-                to: '/docs/intro',
+                to: '/scientific/intro',
+              },
+              {
+                label: 'Web Programmig',
+                to: '/webprog/intro',
+              },
+              {
+                label: 'Distributed Systems',
+                to: '/distributedsystems/intro',
               },
             ],
           },
@@ -106,6 +127,10 @@ const config = {
               {
                 label: 'GitHub',
                 href: 'https://github.com/ehilzinger/Intro_to_Scientific_Work',
+              },
+              {
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/in/enzo-hilzinger/',
               },
             ],
           },
