@@ -115,6 +115,11 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          {
+            href: 'https://cv.enzohilzinger.de',
+            label: 'My CV',
+            position: 'right',
+          },
         ],
       },
       footer: {
