@@ -9,9 +9,9 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx(styles.header)}>
       <div className="container">
-        <Heading as="h1" className="hero__title">
+        <Heading as="h1">
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
@@ -31,6 +31,9 @@ export default function Home() {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
+        <div className={clsx(styles.responsiveParagraph, styles.container)}>
+          Welcome to the home of all lecture and study material - glad to see you here! Feel free to look around and use the materials provided to prepare and learn. 
+        </div>
       <div className="flex-container">
       <CardComponent title="Scientific Basics" text="Learn all you need for scientific writing" link="/scientific/intro"/>
       <CardComponent title="Web Programming" text="Find material for web programming" link="/webprog/intro"/>
