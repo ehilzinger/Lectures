@@ -11,8 +11,6 @@ Die Kunst, komplexe Fragen über das Universum in noch komplexere Antworten zu v
 
 Sollte die vermeintliche Komplexität dieses "wissenschaftlichen Arbeitens" Sie nun daran hindern, sich aktiv zu beteiligen? Natürlich nicht - wie bei den meisten Dingen im Leben kann man mit Übung und ein wenig Hilfe sehr weit kommen. Manchmal funktionieren die Dinge vielleicht nicht so, wie sie sollen, aber lassen Sie sich davon nicht entmutigen, denn alle wissenschaftlichen Erfindungen, die die Menschheit dorthin gebracht haben, wo sie heute ist, haben einmal mit jemandem begonnen, der nicht genau wusste, was vor sich geht!
 
-Übersetzt mit DeepL.com (kostenlose Version)
-
 ## Eine etwas längere Einführung in die Kunst des wissenschaftlichen Arbeitens
 
 So verwirrend es auf den ersten Blick erscheinen mag, die Kunst des wissenschaftlichen Schreibens ist nicht übermäßig schwer zu begreifen. Um ehrlich zu sein, könnte es einfacher sein, wissenschaftlich zu schreiben, als Fantasiewelten in Romanen wie "Der Herr der Ringe" zu erschaffen (ich weiß, am Anfang sieht es nicht so aus)! Glauben Sie einfach daran, dass es sich tatsächlich bewahrheitet, und folgen Sie uns, um mehr zu erfahren und zu staunen.

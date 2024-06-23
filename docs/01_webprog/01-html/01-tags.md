@@ -1,0 +1,14 @@
+---
+sidebar_position: 5
+---
+
+# Tags in HTML
+
+To ensure that everything is neat, HTML offers a variety of built-in tags:
+
+* ```<h1>``` to ```<h6>```: These are headline tags. They scream, 'Look at me! I'm important!' You can think of ```<h1>``` as the party's main attraction, like the fireworks display, and ```<h6>``` as the tiny sparkler on the dessert tray.
+*  ```<p>``` ```: This is a paragraph tag. It's for all the juicy gossip and interesting stories you tell at the party. It keeps everything neatly in line, like rows of polite partygoers.
+*  ```<a>```: Meet the anchor tag. It’s like a magical teleportation device. Click on it, and—poof!—you’re whisked away to another room, or even another party! 'href' is its magical address.
+* ```<img>```: This is the image tag. It's the photo booth at the party. You pop it in with a source (```src```) for where the photo is, and voila! Instant memories.
+
+HTML also makes sure the overall layout is just right. You've got your main area (```<main>```), the header (```<header>```) where the welcome sign hangs, and the footer (```<footer>```) for those parting gifts. Sections (```<section>```) and articles (```<article>```) keep things from getting too chaotic, just like seating people with common interests together."

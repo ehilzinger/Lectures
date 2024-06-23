@@ -2,9 +2,9 @@
 sidebar_position: 99
 ---
 
-# Further Reading
+# Mehr Informationen
 
-Here are some useful books and papers in case you require more formal literature on scientific writing:
+Hier finden Sie einige nützliche Bücher und Abhandlungen, falls Sie mehr formale Literatur zum wissenschaftlichen Schreiben benötigen:
 
 * [The Science of Scientific Writing](https://www.usenix.org/sites/default/files/gopen_and_swan_science_of_scientific_writing.pdf)
 

@@ -3,7 +3,7 @@
  * and scoped locally.
  */
 
-header {
+.header {
   text-align: center;
     padding: 20px;
     opacity: .8;
