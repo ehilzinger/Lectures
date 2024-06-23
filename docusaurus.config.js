@@ -105,6 +105,7 @@ const config = {
             label: 'Scientific Basics',
           },
           
+          
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             type: 'localeDropdown',

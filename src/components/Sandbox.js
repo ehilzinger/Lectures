@@ -34,6 +34,7 @@ const Sandbox = ({exerciseText, solution}) => {
       executeCode();
     }
   };
+  
 
   const textareaStyle = {
     width: '100%',
