@@ -4,7 +4,6 @@ title: Welcome!
 authors: [eh]
 tags: [welcome]
 ---
- Welcome to Learning Matter - this site is currently undergoing construction and features the contents of my lectures at the [Cooperative State University Baden-Wuerttemberg](https://www.dhbw.de/english/home), but also aims to provide additional learning content to students.
+ Willkommen - diese Seite befindet sich derzeit im Aufbau und stellt die Inhalte meiner Vorlesungen an der [Dualen Hochschule Baden-Württemberg](https://www.dhbw.de/english/home) zur Verfügung, soll aber auch zusätzliche Lerninhalte für Studierende bereitstellen.
 
- What differentiates this from other approaches to hybrid (or blended) learning is the fact that the materials provided here should not only support the students' experience, but are the primary source of knowledge for the lectures as well - so no more PDF files, dull PowerPoint presentations or scripts with humongous amounts of pages!
-
+ Der Unterschied zu anderen Ansätzen des hybriden (oder blended) Lernens besteht darin, dass die hier zur Verfügung gestellten Materialien nicht nur die Erfahrung der Studierenden unterstützen sollen, sondern auch die primäre Wissensquelle für die Vorlesungen sind - also keine PDF-Dateien, langweiligen PowerPoint-Präsentationen oder Skripte mit riesigen Seitenmengen mehr!
