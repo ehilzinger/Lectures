@@ -1,0 +1,38 @@
+{
+  "link.title.Docs": {
+    "message": "Docs",
+    "description": "The title of the footer links column with title=Docs in the footer"
+  },
+  "link.title.More": {
+    "message": "More",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.Scientific Basics": {
+    "message": "Scientific Basics",
+    "description": "The label of footer link with label=Scientific Basics linking to /scientific/intro"
+  },
+  "link.item.label.Web Programmig": {
+    "message": "Web Programmig",
+    "description": "The label of footer link with label=Web Programmig linking to /webprog/intro"
+  },
+  "link.item.label.Distributed Systems": {
+    "message": "Distributed Systems",
+    "description": "The label of footer link with label=Distributed Systems linking to /distributedsystems/intro"
+  },
+  "link.item.label.Blog": {
+    "message": "Blog",
+    "description": "The label of footer link with label=Blog linking to /blog"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/ehilzinger/Intro_to_Scientific_Work"
+  },
+  "link.item.label.LinkedIn": {
+    "message": "LinkedIn",
+    "description": "The label of footer link with label=LinkedIn linking to https://www.linkedin.com/in/enzo-hilzinger/"
+  },
+  "copyright": {
+    "message": "Copyright © 2024 Enzo Hilzinger. Built with Docusaurus.",
+    "description": "The footer copyright"
+  }
+}

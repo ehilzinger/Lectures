@@ -1,0 +1,86 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.scientificSidebar.category.Finding Something Interesting": {
+    "message": "Etwas Interessantes finden",
+    "description": "The label for category Finding Something Interesting in sidebar scientificSidebar"
+  },
+  "sidebar.scientificSidebar.category.Finding Something Interesting.link.generated-index.description": {
+    "message": "Erfahren Sie mehr über die Dualität von Thema und Titel, wie Sie ein interessantes Thema finden und wie Sie das Thema mit Leben füllen können.",
+    "description": "The generated-index page description for category Finding Something Interesting in sidebar scientificSidebar"
+  },
+  "sidebar.scientificSidebar.category.Structure & Building Blocks": {
+    "message": "Struktur & Bausteine",
+    "description": "The label for category Structure & Building Blocks in sidebar scientificSidebar"
+  },
+  "sidebar.scientificSidebar.category.Structure & Building Blocks.link.generated-index.description": {
+    "message": "Sie haben also ein Thema und einen Titel für Ihre Arbeit gefunden. Das ist großartig, so dass Sie nun damit beginnen können, Ihre Gesamtstruktur zu entwerfen, der Sie folgen wollen! Werfen wir einen Blick auf die Bausteine, die die meisten wissenschaftlichen Arbeiten haben, damit wir das Rad bei der Erstellung der Grundstruktur nicht neu erfinden müssen.",
+    "description": "The generated-index page description for category Structure & Building Blocks in sidebar scientificSidebar"
+  },
+  "sidebar.scientificSidebar.category.Literature & References": {
+    "message": "Literatur und Quellen",
+    "description": "The label for category Literature & References in sidebar scientificSidebar"
+  },
+  "sidebar.scientificSidebar.category.Literature & References.link.generated-index.description": {
+    "message": "Wie behhält man den Überblick?",
+    "description": "The generated-index page description for category Literature & References in sidebar scientificSidebar"
+  },
+  "sidebar.scientificSidebar.category.Methodology & Evaluation": {
+    "message": "Methodik & Evaluation",
+    "description": "The label for category Methodology & Evaluation in sidebar scientificSidebar"
+  },
+  "sidebar.scientificSidebar.category.Methodology & Evaluation.link.generated-index.description": {
+    "message": "How does one not get lost?",
+    "description": "The generated-index page description for category Methodology & Evaluation in sidebar scientificSidebar"
+  },
+  "sidebar.scientificSidebar.category.Bringing it to Life": {
+    "message": "Die Arbeit zum Leben erwecken",
+    "description": "The label for category Bringing it to Life in sidebar scientificSidebar"
+  },
+  "sidebar.scientificSidebar.category.Bringing it to Life.link.generated-index.description": {
+    "message": "How does one not get lost?",
+    "description": "The generated-index page description for category Bringing it to Life in sidebar scientificSidebar"
+  },
+  "sidebar.scientificSidebar.category.Convey your Knowledge": {
+    "message": "Wissen präsentieren",
+    "description": "The label for category Convey your Knowledge in sidebar scientificSidebar"
+  },
+  "sidebar.scientificSidebar.category.Convey your Knowledge.link.generated-index.description": {
+    "message": "How does one not get lost?",
+    "description": "The generated-index page description for category Convey your Knowledge in sidebar scientificSidebar"
+  },
+  "sidebar.itmanagementSidebar.category.Basics of IT Management": {
+    "message": "Grundlagen des IT-Management",
+    "description": "The label for category Basics of IT Management in sidebar itmanagementSidebar"
+  },
+  "sidebar.itmanagementSidebar.category.Basics of IT Management.link.generated-index.description": {
+    "message": "Lernen Sie die Grundlagen des IT-Service-Managements und die damit verbundenen Konzepte wie Services, Servicewirtschaft und warum Dienstleistungen dem reinen Produktverkauf überlegen sind.",
+    "description": "The generated-index page description for category Basics of IT Management in sidebar itmanagementSidebar"
+  },
+  "sidebar.itmanagementSidebar.category.Service Management": {
+    "message": "Service Management",
+    "description": "The label for category Service Management in sidebar itmanagementSidebar"
+  },
+  "sidebar.itmanagementSidebar.category.Service Management.link.generated-index.description": {
+    "message": "Erfahren Sie mehr über Servicemanagement, Qualitätsmaßnahmen und Dienstleistungsinnovation.",
+    "description": "The generated-index page description for category Service Management in sidebar itmanagementSidebar"
+  },
+  "sidebar.itmanagementSidebar.category.Platform Ecosystems": {
+    "message": "Plattform-Ökosysteme",
+    "description": "The label for category Platform Ecosystems in sidebar itmanagementSidebar"
+  },
+  "sidebar.itmanagementSidebar.category.Platform Ecosystems.link.generated-index.description": {
+    "message": "Erfahren Sie mehr über Plattformen, Ökosysteme und deren Vorteile.",
+    "description": "The generated-index page description for category Platform Ecosystems in sidebar itmanagementSidebar"
+  },
+  "sidebar.itmanagementSidebar.category.Challenges & Adoption": {
+    "message": "Herausforderungen & Adoption",
+    "description": "The label for category Challenges & Adoption in sidebar itmanagementSidebar"
+  },
+  "sidebar.itmanagementSidebar.category.Challenges & Adoption.link.generated-index.description": {
+    "message": "Erfahren Sie mehr über die Herausforderungen und die Einführung von Services.",
+    "description": "The generated-index page description for category Challenges & Adoption in sidebar itmanagementSidebar"
+  }
+}

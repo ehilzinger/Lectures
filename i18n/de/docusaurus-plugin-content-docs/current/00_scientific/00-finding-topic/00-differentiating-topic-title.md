@@ -2,48 +2,46 @@
 sidebar_position: 1
 ---
 
-# Topic vs. Title
+# Thema vs. Titel
 
-Quite similar in wording, these two terms are often confused when starting out with scientific work. To enable a clear differentiation without overlapping, let's clarify some things here:
+Diese beiden Begriffe sind vom Wortlaut her recht ähnlich und werden zu Beginn einer wissenschaftlichen Arbeit oft verwechselt. Um eine klare Unterscheidung ohne Überschneidungen zu ermöglichen, wollen wir hier einige Dinge klären:
 
-## The Topic
+## Das Thema
 
-When starting any kind of written work, what most authors initially think about is the **general outline** of what they want to produce. This usually provides some context on the **what**, **how** and **why** of the text to be written, indicating its cornerstones that the rest is built upon. When thinking about The Lord of the Rings, for example, a basic setting (aka topical context) is as follows:
-* An evil ring crafted by an evil master
-* Two unsuspecting, innocent characters
-* A dangerous, bloody quest of destroying said evil ring
-* The friends they make along the way
-* Impending doom in case of failure to complete that dangerous quest
+Wenn man mit einer schriftlichen Arbeit beginnt, denken die meisten Autoren zunächst an den **Grundriss** dessen, was sie schreiben wollen. Diese gibt in der Regel einen gewissen Kontext für das **Was**, **Wie** und **Warum** des zu schreibenden Textes vor und zeigt die Eckpfeiler auf, auf denen der Rest aufbaut. Wenn man zum Beispiel über den Herrn der Ringe nachdenkt, ergibt sich folgendes Grundgerüst (auch thematischer Kontext genannt):
+* Ein böser Ring, hergestellt von einem bösen Meister
+* Zwei ahnungslose, unschuldige Figuren
+* Eine gefährliche, blutige Suche nach der Zerstörung des bösen Rings
+* Die Freunde, die sie auf ihrem Weg finden
+* Drohendes Unheil, falls die gefährliche Aufgabe nicht erfüllt wird
 
-This defines the **what** of the story - describing its protagonists, antagonists and goal. The **how** in this case is the way the two hobbits must take to destroy the ring, whereas the **why** is quite obviously the aversion of that impending doom (to be more specific: the destruction of the whole world).
+Damit ist das **Was** der Geschichte definiert - die Beschreibung der Protagonisten, der Antagonisten und des Ziels. Das **Wie** ist in diesem Fall der Weg, den die beiden Hobbits gehen müssen, um den Ring zu zerstören, während das **Warum** ganz offensichtlich die Abneigung gegen das drohende Unheil ist (genauer gesagt: die Zerstörung der ganzen Welt).
 
-When applying this to non-fictional works such as scientific papers or theses, we would also call this general overview the **topic** of the work to be written, including all the aspects that we want to talk about:
-* Contextual setting
-* Background and motivation
-* Existing research
-* Open questions
-* Contribution of the work
-
-
+Wenn wir dies auf nicht-fiktionale Werke wie wissenschaftliche Arbeiten oder Dissertationen anwenden, würden wir diesen allgemeinen Überblick auch als das **Thema** des zu schreibenden Werks bezeichnen, das alle Aspekte umfasst, über die wir sprechen wollen:
+* Kontextueller Rahmen
+* Hintergrund und Motivation
+* Bestehende Forschung
+* Offene Fragen
+* Beitrag der Arbeit
 
 
+## Der Titel
 
-## The Title
 
+Wenn das Thema sehr umfangreich sein kann (aber nicht sein sollte), sollte die Überschrift eher verständlich sein. Der Titel einer wissenschaftlichen Arbeit sollte in der Lage sein, den wesentlichen Inhalt zu vermitteln und den potenziellen Lesern einen Eindruck davon zu vermitteln, worum es geht - nur sollte er nicht zu lang oder zu geheimnisvoll sein (nennen Sie Ihre Arbeit nicht "Der Herr der Dinge").
+Häufig neigen angehende Forscher dazu, sich zu viele Gedanken über ihren Titel zu machen und dabei die Bedeutung des Themas zu vergessen, das den Titel untermauert - versuchen Sie, sich nicht von der bloßen Suche nach einem einprägsamen Titel ablenken zu lassen, sondern arbeiten Sie mit dem, was Sie haben, und versuchen Sie, es einfach zu halten.
 
-Where the topic can get quite exhaustive (but shouldn't), the tile should be rather comprehensible. The title of any scientific work should be able to convey the key content and provide prospective readers with a glimpse of what it is about - just don't make it too long or too mysterious (do not call your paper The Lord of the Something).
-What commonly happens to aspiring researchers is that they tend to overthink their title whilst forgetting about the importance of the topic that supports the title - try to not get sidetracked by the sheer focus on finding a catchy title, but instead work with what you got and try to keep it simple.
+![Topic vs. Title Meme mit abgelenkter Freund-Vorlage](https://i.imgflip.com/8uk4nz.jpg)
 
-![Topic vs. Title Meme with distracted boyfriend template](https://i.imgflip.com/8uk4nz.jpg)
-
-A good title should not take more than two lines - which is often not the case, as you will find out when we talk about [references](/category/literature--references) - but for now, try to keep it rather that way. Additionally, think about the following title:
+Ein guter Titel sollte nicht mehr als zwei Zeilen umfassen - was oft nicht der Fall ist, wie Sie feststellen werden, wenn wir über [Referenzen](/category/literature--references) sprechen -, aber für den Moment versuchen Sie, es eher so zu halten. Denken Sie außerdem an den folgenden Titel:
 > A Game of Thrones
 
-Does this create interest in you? Does it even make you excited? For scientific titles, we also aim at creating titles that catch the reader's eye - just not in the same way as with fantasy books. Your title should, nevertheless, draw attention of the prospective reader - after all, you also want them to be excited about the problem that you solve!
-Let's take the following fictious title as an example:
-> A Study of Bacterial Growth in Controlled Environments
+Erweckt dieser Titel Interesse bei Ihnen? Erregt er Sie sogar? Auch bei wissenschaftlichen Titeln streben wir Titel an, die die Aufmerksamkeit des Lesers auf sich ziehen - nur nicht in der gleichen Weise wie bei Fantasy-Büchern. Dennoch sollte Ihr Titel die Aufmerksamkeit des potenziellen Lesers auf sich ziehen - schließlich wollen Sie ihn auch für das Problem begeistern, das Sie lösen!
+Nehmen wir den folgenden fiktiven Titel als Beispiel:
+> Eine Studie über bakterielles Wachstum in kontrollierten Umgebungen
 
-Does this create excitement? Maybe it does, in case you are a biologist - but still, this title misses key information. It does not elaborate on **which** controlled environments or bacteria it talks about, it also does not mention what kind of study or methodology is used here. 
-It is therefore of crucial importance to include such necessary information in a title - opposed to what we see in fiction and fantasy, where the deliberately ommiting information adds additional suspense (we don't do that here).
 
-Here is a [checklist](/files/checklist_title.pdf) to figure out whether your title is short enough, catchy, and conveys all the necessary information.
+Ist das ein aufregender, spannungserzeugender Titel? Vielleicht schon, falls Sie Biologe sind - aber dennoch fehlen in diesem Titel wichtige Informationen. Es wird nicht näher erläutert, **welche** kontrollierten Umgebungen oder Bakterien gemeint sind, und es wird auch nicht erwähnt, welche Art von Studie oder Methodik hier verwendet wird. 
+Es ist daher von entscheidender Bedeutung, solche notwendigen Informationen in einen Titel aufzunehmen - im Gegensatz zu dem, was wir in Belletristik und Fantasy sehen, wo das absichtliche Weglassen von Informationen zusätzliche Spannung erzeugt (das tun wir hier nicht).
+
+Hier finden Sie eine [Checkliste](/files/checklist_title.pdf), mit der Sie herausfinden können, ob Ihr Titel kurz genug und einprägsam ist und alle erforderlichen Informationen enthält.

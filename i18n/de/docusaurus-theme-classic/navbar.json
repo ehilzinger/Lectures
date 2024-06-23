@@ -1,0 +1,38 @@
+{
+  "title": {
+    "message": "Home",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "My Site Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Scientific Basics": {
+    "message": "Wissenschaftliches Arbeiten",
+    "description": "Navbar item with label Scientific Basics"
+  },
+  "item.label.Web Programming": {
+    "message": "Webprogrammierung",
+    "description": "Navbar item with label Web Programming"
+  },
+  "item.label.Distributed Systems": {
+    "message": "Verteilte Systeme",
+    "description": "Navbar item with label Distributed Systems"
+  },
+  "item.label.Software Engineering": {
+    "message": "Software Engineering",
+    "description": "Navbar item with label Software Engineering"
+  },
+  "item.label.IT Management": {
+    "message": "IT Management",
+    "description": "Navbar item with label IT Management"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}
