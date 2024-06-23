@@ -3,18 +3,46 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 4rem 0;
+header {
   text-align: center;
-  position: relative;
-  overflow: hidden;
+    padding: 20px;
+    opacity: .8;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
+.container {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.responsiveParagraph {
+  text-align: left;
+  margin: 0;
+  padding: 10px;
+}
+
+@media (min-width: 601px) {
+  .responsiveParagraph {
+      max-width: 600px; /* Adjust the maximum width as needed */
+      margin-left: auto;
+      margin-right: 15%;
   }
 }
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .responsiveParagraph {
+      width: 100%;
+      box-sizing: border-box;
+  }
+}
+
+.background {
+  background: linear-gradient(45deg, #6BB9DB, #AA55FF);
+}
+
+
 
 .buttons {
   display: flex;

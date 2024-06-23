@@ -64,6 +64,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/logo.png',
       navbar: {
+        hideOnScroll: true,
         title: 'Home',
         logo: {
           alt: 'My Site Logo',
@@ -71,35 +72,39 @@ const config = {
         },
         items: [
           {
+            type: 'dropdown',
+            label: 'Lectures',
+            position: 'left',
+            items: [
+              {
+                type: 'doc',
+                docId: 'webprog/intro',
+                label: 'Web Programming',
+              },
+              {
+                type: 'doc',
+                docId: 'distributedsystems/intro',
+                label: 'Distributed Systems',
+              },
+              {
+                type: 'doc',
+                docId: 'softwareengineering/intro',
+                label: 'Software Engineering',
+              },
+              {
+                type: 'doc',
+                docId: 'itmanagement/intro',
+                label: 'IT Management',
+              },
+            ]
+          },
+          {
             type: 'doc',
             docId: 'scientific/intro',
             position: 'left',
             label: 'Scientific Basics',
           },
-          {
-            type: 'doc',
-            docId: 'webprog/intro',
-            position: 'left',
-            label: 'Web Programming',
-          },
-          {
-            type: 'doc',
-            docId: 'distributedsystems/intro',
-            position: 'left',
-            label: 'Distributed Systems',
-          },
-          {
-            type: 'doc',
-            docId: 'softwareengineering/intro',
-            position: 'left',
-            label: 'Software Engineering',
-          },
-          {
-            type: 'doc',
-            docId: 'itmanagement/intro',
-            position: 'left',
-            label: 'IT Management',
-          },
+          
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             type: 'localeDropdown',
