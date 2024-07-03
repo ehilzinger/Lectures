@@ -82,5 +82,29 @@
   "sidebar.itmanagementSidebar.category.Challenges & Adoption.link.generated-index.description": {
     "message": "Erfahren Sie mehr über die Herausforderungen und die Einführung von Services.",
     "description": "The generated-index page description for category Challenges & Adoption in sidebar itmanagementSidebar"
+  },
+  "sidebar.webProgSidebar.category.Basics of Web Programming": {
+    "message": "Basics of Web Programming",
+    "description": "The label for category Basics of Web Programming in sidebar webProgSidebar"
+  },
+  "sidebar.webProgSidebar.category.Basics of Web Programming.link.generated-index.description": {
+    "message": "Which technological advancements made web programming come to live? Why do we even have web pages nowadays?",
+    "description": "The generated-index page description for category Basics of Web Programming in sidebar webProgSidebar"
+  },
+  "sidebar.webProgSidebar.category.HTML": {
+    "message": "HTML",
+    "description": "The label for category HTML in sidebar webProgSidebar"
+  },
+  "sidebar.webProgSidebar.category.HTML.link.generated-index.description": {
+    "message": "You may have heard it before - get ready for some structure on your first web page!",
+    "description": "The generated-index page description for category HTML in sidebar webProgSidebar"
+  },
+  "sidebar.webProgSidebar.category.JavaScript": {
+    "message": "JavaScript",
+    "description": "The label for category JavaScript in sidebar webProgSidebar"
+  },
+  "sidebar.webProgSidebar.category.JavaScript.link.generated-index.description": {
+    "message": "Not much interactivity yet, huh? Time to get some action going on!",
+    "description": "The generated-index page description for category JavaScript in sidebar webProgSidebar"
   }
 }

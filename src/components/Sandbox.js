@@ -2,6 +2,9 @@
 import React, { useState } from 'react';
 
 
+// IDEAS:
+// integrate LLM assistant to aid with incomplete coding or to provide hints & tips for exercises
+
 const Sandbox = ({exerciseText, solution}) => {
   const [code, setCode] = useState('');
   const [output, setOutput] = useState('');
@@ -56,7 +59,7 @@ const Sandbox = ({exerciseText, solution}) => {
   };
 
   const announcementStyle =  {
-    backgroundColor: 'red',
+    background: 'linear-gradient(45deg, #6BB9DB, #AA55FF)',
     borderRadius: '4px',
     padding: "20px",
     fontWeight: "bold"
@@ -72,10 +75,10 @@ const Sandbox = ({exerciseText, solution}) => {
         rows={10}
         value={code}
         onChange={(e) => setCode(e.target.value)}
-        placeholder="Write JavaScript code here..."
+        placeholder="Write your Code here..."
       />
       <br />
-      <button style={buttonStyle} onClick={executeCode}>Run Code</button>
+      <button style={buttonStyle} onClick={executeCode}>Execute Code</button>
       <br />
       <div style={{marginTop: "10px"}}>
         <h3>Output:</h3>
