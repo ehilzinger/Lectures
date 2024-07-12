@@ -96,6 +96,7 @@ const config = {
                 docId: 'itmanagement/intro',
                 label: 'IT Management',
               },
+              
             ]
           },
           {
@@ -106,7 +107,7 @@ const config = {
           },
           
           
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: 'https://blog.enzohilzinger.de/', label: 'Blog', position: 'left'},
           {
             type: 'localeDropdown',
             position: 'right',
