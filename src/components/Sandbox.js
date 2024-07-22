@@ -1,6 +1,6 @@
 // Sandbox.js
 import React, { useState } from 'react';
-
+import ConfettiExplosion from 'react-confetti-explosion';
 
 // IDEAS:
 // integrate LLM assistant to aid with incomplete coding or to provide hints & tips for exercises
@@ -9,6 +9,7 @@ const Sandbox = ({exerciseText, solution}) => {
   const [code, setCode] = useState('');
   const [output, setOutput] = useState('');
   const [error, setError] = useState('');
+  const [exploding, setExploding] = useState(false);
 
   const executeCode = () => {
     try {
@@ -20,7 +21,8 @@ const Sandbox = ({exerciseText, solution}) => {
       }
       setError('');
       if(result === solution) {
-        alert("Right!") //replace with toast someday
+        //alert("Right!") //replace with toast someday
+        setExploding(true)
       }
     } catch (err) {
       setError(err.toString());
@@ -66,8 +68,9 @@ const Sandbox = ({exerciseText, solution}) => {
   }
 
   return (
-    <div>
-        <p style={announcementStyle}>JavaScript Integration is still in early access!</p>
+    <div style={{ borderRadius: "10px", padding: '20px', backgroundColor: "rgba(37, 194, 160, .35)" }}>
+        {//<p style={announcementStyle}>JavaScript Integration is still in early access!</p>
+        }
         <p>{exerciseText}</p>
       <textarea
         onKeyDown={handleKeyDown} 
@@ -77,8 +80,12 @@ const Sandbox = ({exerciseText, solution}) => {
         onChange={(e) => setCode(e.target.value)}
         placeholder="Write your Code here..."
       />
+      
       <br />
-      <button style={buttonStyle} onClick={executeCode}>Execute Code</button>
+      <button style={buttonStyle} onClick={executeCode}>
+        Execute Code
+        {exploding && <ConfettiExplosion onComplete={() => setExploding(false)} />}  
+      </button>
       <br />
       <div style={{marginTop: "10px"}}>
         <h3>Output:</h3>

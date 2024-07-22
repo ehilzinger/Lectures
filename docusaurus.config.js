@@ -46,11 +46,7 @@ const config = {
           editUrl:
             'https://github.com/ehilzinger/Intro_to_Scientific_Work/tree/main',
         },
-        blog: {
-          showReadingTime: true,
-          editUrl:
-            'https://github.com/ehilzinger/Intro_to_Scientific_Work',
-        },
+        
         theme: {
           customCss: './src/css/custom.css',
         },
