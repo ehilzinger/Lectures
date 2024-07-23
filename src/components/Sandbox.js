@@ -22,7 +22,7 @@ const Sandbox = ({exerciseText, solution}) => {
         setOutput(''); 
       }
       setError('');
-      if(result === solution) {
+      if(result == solution) {
         setExploding(true)
         setCorrect(true)
       }

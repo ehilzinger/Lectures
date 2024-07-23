@@ -1,6 +1,7 @@
 ---
 sidebar_position: 10
 ---
+import Sandbox from '../../../src/components/Sandbox';
 
 # Variables and Data Types
 
@@ -10,3 +11,26 @@ can store a value of one kind or another. This is depicted below:
 ![Variables Intro](/img/01_webprog/variables.png) 
 
 Here, we can see three variables storing different datatypes such as string, integer and double (or float point).
+
+Creating a variable in JavaScript can easily be done in a two different ways:
+```js 
+let foo = "Hello World";
+var bar = 123;
+```
+
+In the code block, we declare three variables ```foo``` and ```bar``` and immediately assign a value to them. We could also only declare the variables without the initial value assignment,
+which would simply reduce the statement to ```let foo;```.
+
+:::note
+Notice that there is a difference between ```let``` and ```var``` when declaring a variable, which we will cover when talking about functions later on.
+:::
+
+These two variables can be changed by reassigning a value to them, whereas a constant cannot be changed and thus should have a value upon declaration:
+```js 
+const doe = 123.45;
+```
+
+A reassignment of the constant value `doe` is therefore not possible! Trying to reassign it anyway using a subsequent `doe = 567` will result in a type error. Try it out:
+
+<Sandbox exerciseText="Declare a constant 'doe' with a value of 5 and try to change it's value in a new line." solution=""/>
+

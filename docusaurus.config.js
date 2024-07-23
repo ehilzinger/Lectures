@@ -145,10 +145,6 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
                 href: 'https://github.com/ehilzinger/Intro_to_Scientific_Work',
               },
