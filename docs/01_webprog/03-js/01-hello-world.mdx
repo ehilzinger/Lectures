@@ -8,11 +8,19 @@ import Sandbox from '../../../src/components/Sandbox';
 Let's get started with a very simple "Hello World" example in JavaScript!
 This is as simple as typing out the following code:
 ```js 
-    console.log("Hello World")
+console.log("Hello World")
 ```
 
 As you can see, we do not need to declare any import or dependency in order to be able to access the ```console.log()``` function - it is built into JavaScript's [web APIs](https://developer.mozilla.org/en-US/docs/Web/API), enabling quick and easy access.
+What we also see is our very first usage of a String - the ```"Hello World"```. Using ```console.log()```, it is possible to print all datatypes to the console.
 
-Try to write your first program below!
+Usually, we not only want to print stuff into the console, but we rather want to return some kind of value - for example the result of a calulcation.
+This might look like the following:
+```js 
+return "Hello World"
+```
+Now, we do not print the text "Hello World" to the console, but instead return it - so any caller of this codeblock can then make use of this result!
 
-<Sandbox exerciseText="Return the text 'Hello World'" solution="Hello World"/>
+Now it's on you - try to write your first program below!
+
+<Sandbox exerciseText="Return the text 'Hello There'" solution="Hello There"/>

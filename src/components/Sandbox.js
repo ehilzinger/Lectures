@@ -1,6 +1,7 @@
 // Sandbox.js
 import React, { useState } from 'react';
 import ConfettiExplosion from 'react-confetti-explosion';
+import Banner from "./Banner";
 
 // IDEAS:
 // integrate LLM assistant to aid with incomplete coding or to provide hints & tips for exercises
@@ -10,6 +11,7 @@ const Sandbox = ({exerciseText, solution}) => {
   const [output, setOutput] = useState('');
   const [error, setError] = useState('');
   const [exploding, setExploding] = useState(false);
+  const [correct, setCorrect] = useState(false);
 
   const executeCode = () => {
     try {
@@ -17,19 +19,27 @@ const Sandbox = ({exerciseText, solution}) => {
       if (result !== undefined && result !== null) {
         setOutput(result.toString());
       } else {
-        setOutput(''); // Clear output if result is undefined or null
+        setOutput(''); 
       }
       setError('');
       if(result === solution) {
-        //alert("Right!") //replace with toast someday
         setExploding(true)
+        setCorrect(true)
       }
     } catch (err) {
       setError(err.toString());
-      setOutput(''); // Clear output in case of error
+      setOutput(''); 
     }
     
   };
+
+  const reset = () => {
+    setCode('');
+    setCorrect(false);
+    setExploding(false);
+    setOutput('');
+    setError('');
+  }
 
 
   const handleKeyDown = (event) => {
@@ -43,15 +53,16 @@ const Sandbox = ({exerciseText, solution}) => {
 
   const textareaStyle = {
     width: '100%',
-    boxSizing: 'border-box', // Ensure padding and border are included in the width
-    marginBottom: '10px', // Optional: Add margin bottom to separate from the button
-    resize: 'none', // Disable textarea resizing
-    borderRadius: '8px', // Rounded corners
-    padding: '10px', // Optional: Add padding inside textarea
+    boxSizing: 'border-box',
+    marginBottom: '10px', 
+    resize: 'none', 
+    borderRadius: '8px', 
+    padding: '10px',
   };
 
   const buttonStyle = {
     padding: '10px',
+    marginRight: '10px',
     backgroundColor: '#004766',
     color: '#ffffff',
     border: 'none',
@@ -71,30 +82,32 @@ const Sandbox = ({exerciseText, solution}) => {
     <div style={{ borderRadius: "10px", padding: '20px', backgroundColor: "rgba(37, 194, 160, .35)" }}>
         {//<p style={announcementStyle}>JavaScript Integration is still in early access!</p>
         }
-        <p>{exerciseText}</p>
+        <p><h3>Task: </h3>{exerciseText}</p>
       <textarea
         onKeyDown={handleKeyDown} 
         style={textareaStyle}
         rows={10}
         value={code}
         onChange={(e) => setCode(e.target.value)}
-        placeholder="Write your Code here..."
+        placeholder="Code..."
       />
       
       <br />
       <button style={buttonStyle} onClick={executeCode}>
-        Execute Code
+        Execute Code (⇧ + ↵)
         {exploding && <ConfettiExplosion onComplete={() => setExploding(false)} />}  
       </button>
+      <button style={buttonStyle} onClick={reset}>Reset</button>
       <br />
-      <div style={{marginTop: "10px"}}>
+     {output &&  <div style={{marginTop: "10px"}}>
         <h3>Output:</h3>
         <pre>{output}</pre>
-      </div>
-      <div>
+      </div>}
+      {error && <div>
         <h3>Error:</h3>
         <pre style={{ color: 'red' }}>{error}</pre>
-      </div>
+      </div>}
+      {correct && <Banner text="Correct!" />}
     </div>
   );
 };
