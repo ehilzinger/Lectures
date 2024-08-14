@@ -36,7 +36,7 @@ export default function Home() {
         </div>
       <div className="flex-container">
       <CardComponent title="Scientific Basics" text="Learn all you need for scientific writing" link="/scientific/intro"/>
-      <CardComponent title="Web Programming" text="Find material for web programming" link="/webprog/intro"/>
+      <CardComponent title="Web Programming" text="Find material for web programming" link="/webprog/basics/background"/>
       <CardComponent title="Distributed Systems" text="Find material for web programming" link="/distributedsystems/intro"/>
       <CardComponent title="Blog" text="Read the blog" link=""/>
       </div>

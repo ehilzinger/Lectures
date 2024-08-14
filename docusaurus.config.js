@@ -132,7 +132,7 @@ const config = {
               },
               {
                 label: 'Web Programmig',
-                to: '/webprog/intro',
+                to: '/webprog/basics/background',
               },
               {
                 label: 'Distributed Systems',
