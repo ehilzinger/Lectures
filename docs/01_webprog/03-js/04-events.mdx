@@ -1,0 +1,168 @@
+---
+sidebar_position: 20
+---
+
+# Events
+
+Imagine visiting a website where nothing reacts to your actions—no buttons to click, no images that change when hovered over, and no dynamic content updates. Pretty dull, right? That’s why **JavaScript events** are essential. Events in JavaScript allow web pages to respond to user interactions, making the web more interactive, responsive, and engaging.
+
+---
+
+### What Exactly is an Event?
+
+An **event** is an action or occurrence that happens in the browser, which JavaScript can respond to. These actions can be triggered by the user (like clicking a button), the browser (like loading a page), or even programmatically through JavaScript code itself.
+
+Common examples of events include:
+- **Clicking a button**: (`click` event)
+- **Hovering over an element**: (`mouseover` event)
+- **Typing in a text box**: (`keydown` or `keyup` events)
+- **Submitting a form**: (`submit` event)
+- **Page loading**: (`load` event)
+
+---
+
+### How Do Events Work?
+
+Events operate on a "listener" system. You can think of an event **listener** as a person waiting for something to happen. When that something happens (like a button click), the listener reacts by running some code.
+
+Let’s look at an example:
+
+```javascript
+document.getElementById("myButton").addEventListener("click", function() {
+    alert("Button clicked!");
+});
+```
+
+In this example:
+1. We grab an element (a button) from the HTML by its ID.
+2. We add an **event listener** to it using the `addEventListener` method.
+3. We tell it to listen for the `"click"` event.
+4. When the button is clicked, it triggers an **alert** saying "Button clicked!"
+
+---
+
+### Types of Events
+
+JavaScript can listen for and react to a wide range of events. Here are some of the most commonly used types:
+
+#### 1. **Mouse Events**
+These events detect interactions with the mouse:
+- **click**: When the user clicks on an element.
+- **dblclick**: When the user double-clicks on an element.
+- **mouseover**: When the user moves the mouse pointer over an element.
+- **mouseout**: When the mouse pointer leaves an element.
+
+#### 2. **Keyboard Events**
+These events track what keys the user presses:
+- **keydown**: Fires when a key is pressed.
+- **keyup**: Fires when a key is released.
+
+Example:
+```javascript
+document.addEventListener("keydown", function(event) {
+    console.log("Key pressed: " + event.key);
+});
+```
+
+#### 3. **Form Events**
+These events are related to user interaction with forms:
+- **submit**: When a form is submitted.
+- **focus**: When an element (like an input field) gains focus.
+- **blur**: When an element loses focus.
+
+#### 4. **Window Events**
+These are related to the browser window and the document itself:
+- **load**: Fires when the entire page (including images) has loaded.
+- **resize**: Fires when the browser window is resized.
+- **scroll**: Fires when the user scrolls the page.
+
+---
+
+### Event Handling: The `addEventListener` Method
+
+JavaScript’s most common way to listen for events is through the `addEventListener` method. This method allows you to assign an event listener to a specific element, specifying both the event type (like `"click"`) and the function that should run when the event occurs.
+
+Example:
+
+```javascript
+let myButton = document.getElementById("myButton");
+
+myButton.addEventListener("click", function() {
+    console.log("The button was clicked!");
+});
+```
+
+This method is preferable over older approaches, such as using the `onclick` attribute in HTML, because:
+- **Separation of concerns**: JavaScript is kept out of your HTML, making the code more maintainable.
+- **Multiple listeners**: You can add multiple event listeners to the same element without overwriting previous ones.
+
+---
+
+### Event Objects: Getting More Information
+
+When an event occurs, JavaScript provides you with an **event object** that contains all sorts of useful information about the event. For example, if a user clicks on a button, the event object tells you details like which button was clicked, where it was clicked, and more.
+
+Example:
+
+```javascript
+document.addEventListener("click", function(event) {
+    console.log("Clicked element: " + event.target.tagName);
+});
+```
+
+Here, `event.target` refers to the actual element that was clicked.
+
+---
+
+### Event Propagation: Bubbling and Capturing
+
+Events in JavaScript don’t just occur on one element; they can propagate (move) through the DOM tree. There are two phases to event propagation:
+1. **Capturing phase**: The event moves from the root of the DOM tree down to the target element.
+2. **Bubbling phase**: After reaching the target element, the event "bubbles up" back to the root.
+
+By default, events propagate in the **bubbling phase**, but you can control this behavior. For example, to stop an event from propagating further, you can use `event.stopPropagation()`.
+
+---
+
+### Removing Event Listeners
+
+Sometimes, you might want to remove an event listener after it's no longer needed. You can do this with the `removeEventListener` method:
+
+```javascript
+function myFunction() {
+    console.log("This will run once, then stop.");
+}
+
+let myButton = document.getElementById("myButton");
+
+myButton.addEventListener("click", myFunction);
+
+// Later, remove the event listener
+myButton.removeEventListener("click", myFunction);
+```
+
+---
+
+### Handling Events with Arrow Functions
+
+When using **arrow functions** in event listeners, remember that arrow functions don’t have their own `this` context. This means that the value of `this` inside an arrow function is inherited from the surrounding code.
+
+Example:
+
+```javascript
+let myButton = document.getElementById("myButton");
+
+myButton.addEventListener("click", () => {
+    console.log(this);  // Refers to the outer scope, not the button
+});
+```
+
+If you need access to the element that triggered the event, use the `event` object’s `target` property instead of relying on `this`.
+
+---
+
+### Conclusion: Bringing Your Pages to Life with Events
+
+Events in JavaScript are the key to making your web pages interactive and responsive to user actions. Whether it’s detecting clicks, keyboard input, or even page loading, mastering events will allow you to create rich, dynamic user experiences.
+
+Incorporating events into your JavaScript projects is like adding spice to a dish—it takes your code from being a static recipe to something flavorful, engaging, and fun!
