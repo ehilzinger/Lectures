@@ -1,0 +1,378 @@
+---
+sidebar_position: 99
+---
+
+# Coding Challenges
+## Hone Your Skills from Beginner to Advanced
+
+Welcome to the JavaScript coding challenge corner! These challenges are designed to help you grow your problem-solving abilities, solidify your understanding of JavaScript, and level up your coding game. Each challenge is followed by two collapsible hints to give you some guidance if needed—without spoiling the fun! Start easy and gradually work your way up.
+
+---
+
+### Challenge 1: Sorting an Array (Easy)
+
+**Description:**
+Write a function that takes an array of numbers and returns a sorted version of the array in ascending order.
+
+```javascript
+function sortArray(arr) {
+    // Your code here
+}
+```
+
+Example:
+
+```javascript
+let numbers = [5, 2, 9, 1, 5, 6];
+console.log(sortArray(numbers)); // Output: [1, 2, 5, 5, 6, 9]
+```
+
+
+
+
+<details>
+  <summary>Hint 1: Built-in Methods</summary>
+
+
+  JavaScript has a built-in `sort()` method. But there's a catch: when sorting numbers, you might need to provide a comparison function.
+</details>
+
+<details>
+  <summary>Hint 2: Sorting with Compare Function</summary>
+
+  To sort numbers correctly, use `arr.sort((a, b) => a - b);`—this ensures numerical sorting instead of the default lexicographical sorting.
+</details>
+
+---
+
+### Challenge 2: Reverse a String (Easy)
+
+**Description:**
+Write a function that takes a string and returns it in reverse.
+
+```javascript
+function reverseString(str) {
+    // Your code here
+}
+```
+
+Example:
+
+```javascript
+let text = "JavaScript";
+console.log(reverseString(text)); // Output: "tpircSavaJ"
+```
+
+<details>
+  <summary>Hint 1: String to Array</summary>
+
+  You can use `split('')` to turn a string into an array of characters.
+</details>
+
+<details>
+  <summary>Hint 2: Array Method</summary>
+
+  After splitting, use `reverse()` to reverse the array and `join('')` to turn it back into a string.
+</details>
+
+---
+
+### Challenge 3: FizzBuzz (Easy/Medium)
+
+**Description:**
+Write a function that prints numbers from 1 to 100. For multiples of 3, print “Fizz” instead of the number. For multiples of 5, print “Buzz”. For numbers that are multiples of both 3 and 5, print “FizzBuzz”.
+
+```javascript
+function fizzBuzz() {
+    // Your code here
+}
+```
+
+Expected Output:
+```
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+...
+```
+
+<details>
+  <summary>Hint 1: Modulo Operator</summary>
+
+  Use the modulo operator (`%`) to check if a number is divisible by another (e.g., `if (n % 3 === 0)`).
+</details>
+
+<details>
+  <summary>Hint 2: Multiple Conditions</summary>
+
+  Make sure to check for numbers divisible by both 3 and 5 **first**, before checking for 3 or 5 individually.
+</details>
+
+---
+
+### Challenge 4: Sum of Array Elements (Medium)
+
+**Description:**
+Write a function that takes an array of numbers and returns the sum of all the numbers in the array.
+
+```javascript
+function sumArray(arr) {
+    // Your code here
+}
+```
+
+Example:
+
+```javascript
+let nums = [10, 20, 30, 40];
+console.log(sumArray(nums)); // Output: 100
+```
+
+<details>
+  <summary>Hint 1: Looping Through Array</summary>
+
+  You can use a `for` loop to iterate through the array and add each element to a sum variable.
+</details>
+
+<details>
+  <summary>Hint 2: Array Reduce Method</summary>
+
+  Try using the `reduce()` method to sum the array in a more concise way: `arr.reduce((acc, val) => acc + val, 0);`.
+</details>
+
+---
+
+### Challenge 5: Check for Palindrome (Medium)
+
+**Description:**
+Write a function that checks if a given string is a palindrome. A palindrome is a word or phrase that reads the same backward as forward.
+
+```javascript
+function isPalindrome(str) {
+    // Your code here
+}
+```
+
+Example:
+
+```javascript
+console.log(isPalindrome("racecar")); // Output: true
+console.log(isPalindrome("hello"));   // Output: false
+```
+
+<details>
+  <summary>Hint 1: Ignore Case</summary>
+
+  Convert the string to lowercase using `toLowerCase()` to make it case-insensitive.
+</details>
+
+<details>
+  <summary>Hint 2: Reverse the String</summary>
+
+  Reverse the string and compare it to the original to check if it’s a palindrome.
+</details>
+
+---
+
+### Challenge 6: Factorial of a Number (Medium)
+
+**Description:**
+Write a function that returns the factorial of a given number. A factorial of a number `n` is the product of all positive integers less than or equal to `n` (e.g., `5! = 5 * 4 * 3 * 2 * 1 = 120`).
+
+```javascript
+function factorial(n) {
+    // Your code here
+}
+```
+
+Example:
+
+```javascript
+console.log(factorial(5)); // Output: 120
+```
+
+<details>
+  <summary>Hint 1: Recursion</summary>
+
+  Consider using recursion: a function that calls itself to break down the problem.
+</details>
+
+<details>
+  <summary>Hint 2: Base Case</summary>
+
+  The base case for recursion is when `n` equals 0, since `0!` is defined as 1.
+</details>
+
+---
+
+### Challenge 7: Find the Longest Word (Medium/Hard)
+
+**Description:**
+Write a function that takes a string and returns the longest word in the string.
+
+```javascript
+function longestWord(str) {
+    // Your code here
+}
+```
+
+Example:
+
+```javascript
+console.log(longestWord("The quick brown fox jumps over the lazy dog")); // Output: "jumps"
+```
+
+<details>
+  <summary>Hint 1: Split the String</summary>
+
+  Use the `split(' ')` method to break the sentence into an array of words.
+</details>
+
+<details>
+  <summary>Hint 2: Loop Through Words</summary>
+
+  Loop through the array of words, keeping track of the longest word found.
+</details>
+
+---
+
+### Challenge 8: Merge Two Sorted Arrays (Hard)
+
+**Description:**
+Write a function that takes two sorted arrays and returns a new array that merges both arrays in sorted order.
+
+```javascript
+function mergeSortedArrays(arr1, arr2) {
+    // Your code here
+}
+```
+
+Example:
+
+```javascript
+let arr1 = [1, 3, 5];
+let arr2 = [2, 4, 6];
+console.log(mergeSortedArrays(arr1, arr2)); // Output: [1, 2, 3, 4, 5, 6]
+```
+
+<details>
+  <summary>Hint 1: Two Pointers</summary>
+
+  Use two pointers to traverse both arrays and compare the elements, inserting the smaller one into the result array.
+</details>
+
+<details>
+  <summary>Hint 2: While Loop</summary>
+
+  Continue merging elements until you’ve traversed both arrays completely. Don’t forget to add remaining elements from any array that’s not empty.
+</details>
+
+---
+
+### Challenge 9: Remove Duplicates from Array (Hard)
+
+**Description:**
+Write a function that removes duplicate values from an array.
+
+```javascript
+function removeDuplicates(arr) {
+    // Your code here
+}
+```
+
+Example:
+
+```javascript
+let nums = [1, 2, 3, 3, 4, 5, 5];
+console.log(removeDuplicates(nums)); // Output: [1, 2, 3, 4, 5]
+```
+
+<details>
+  <summary>Hint 1: Set Data Structure</summary>
+
+  JavaScript’s `Set` object can store unique values. Try converting the array to a set and back.
+</details>
+
+<details>
+  <summary>Hint 2: Filter</summary>
+
+  Alternatively, you could loop through the array and filter out duplicates by keeping track of elements that have already been added.
+</details>
+
+---
+
+### Challenge 10: Find Pairs That Sum to a Target (Advanced)
+
+**Description:**
+Write a function that takes an array of numbers and a target sum. The function should return all unique pairs of numbers that add up to the target sum.
+
+```javascript
+function findPairs(arr, target) {
+    // Your code here
+}
+```
+
+Example:
+
+```javascript
+let numbers = [2, 4, 3, 5, 7, 8, 1];
+console.log(findPairs(numbers, 9)); // Output: [[2, 7], [4, 5], [1, 8]]
+```
+
+<details>
+  <summary>Hint 1: Use a Set</summary>
+
+  A `Set` can help keep track of which numbers you’ve seen before, speeding up the process of finding pairs.
+</details>
+
+<details>
+  <summary>Hint 2: Avoid Duplicate Pairs</summary>
+
+  Ensure you’re not returning the same pair twice by using a data structure that ensures uniqueness.
+</details>
+
+---
+
+### Challenge 11: Binary Search (Advanced)
+
+**Description:**
+Write a function that performs a binary search on a sorted array.
+
+ The function should return the index of the target element or `-1` if the element is not found.
+
+```javascript
+function binarySearch(arr, target) {
+    // Your code here
+}
+```
+
+Example:
+
+```javascript
+let numbers = [1, 3, 5, 7, 9];
+console.log(binarySearch(numbers, 5)); // Output: 2
+console.log(binarySearch(numbers, 6)); // Output: -1
+```
+
+<details>
+  <summary>Hint 1: Divide and Conquer</summary>
+
+  Split the array in half and check whether the target is in the left or right half.
+</details>
+
+<details>
+  <summary>Hint 2: Recursive Solution</summary>
+
+  Try implementing the search recursively by continuing to split the array in half.
+</details>
+
+---
+
+By tackling these challenges, you'll sharpen your JavaScript skills and get ready to solve real-world problems with greater efficiency and confidence!
