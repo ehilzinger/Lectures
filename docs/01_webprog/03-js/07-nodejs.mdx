@@ -1,0 +1,195 @@
+---
+sidebar_position: 35
+---
+
+# Node.js - Server-Side JavaScript
+
+Hello, digital adventurers and brave explorers of the back-end! By now, you’re probably familiar with JavaScript as the magical tool that brings life to the web, transforming static HTML into interactive experiences. But what if I told you that JavaScript has been breaking free from the confines of the browser and running wild on servers around the world? Enter **Node.js**, the game-changer that lets JavaScript flex its muscles beyond the front-end and become a powerful tool for building back-end services, APIs, and more.
+
+In this intro, we’re going to uncover the secrets of **Node.js**, from its origins as a humble runtime environment to its role as a heavyweight in modern web development. By the end, you’ll not only understand Node.js—you’ll be coding your very own server with it. Ready? Let’s get started!
+
+---
+
+### What Is Node.js?  
+At its core, **Node.js** is a JavaScript runtime environment built on Chrome’s V8 JavaScript engine. But don’t let the fancy jargon intimidate you—this just means that Node.js allows you to run JavaScript *outside* the browser. It’s like taking your JavaScript code, normally confined to the front-end, and setting it loose on the server-side, where it can handle things like file systems, databases, and network requests.
+
+**Fun fact:** Node.js was created in 2009 by Ryan Dahl, and it revolutionized JavaScript by making it possible to build scalable network applications. With its **non-blocking, event-driven architecture**, Node.js excels at handling many connections at once, making it perfect for building fast, efficient web servers.
+
+---
+
+### Why Use Node.js?  
+So why should you care about Node.js? Well, let’s break it down:
+
+- **Single Language Full Stack:** You can use JavaScript for both the front-end *and* the back-end, meaning you don’t need to learn a separate language to handle server-side logic. One language to rule them all!
+- **Asynchronous & Non-blocking:** Node.js uses an event-driven, non-blocking I/O model. This is fancy speak for "it’s really good at multitasking," meaning it can handle a ton of requests without slowing down.
+- **Speed & Efficiency:** Built on Google’s V8 engine, Node.js is fast—like really fast. If speed is your game, Node’s your framework.
+- **Vast Ecosystem:** The Node Package Manager (NPM) gives you access to a massive collection of libraries and tools. Whatever you want to build, chances are, there’s an NPM package for that.
+
+---
+
+### Your First Node.js Program: Hello, Server!
+
+Let’s jump right in and build your first server. In Node.js, setting up a server is super easy. Follow these steps:
+
+1. Create a new file called `server.js`.
+2. Add the following code:
+   ```javascript
+   const http = require('http');
+
+   const server = http.createServer((req, res) => {
+     res.statusCode = 200;
+     res.setHeader('Content-Type', 'text/plain');
+     res.end('Hello, Node.js World!\n');
+   });
+
+   server.listen(3000, () => {
+     console.log('Server running at http://localhost:3000/');
+   });
+   ```
+
+3. Save the file and run it in your terminal with the command:
+   ```bash
+   node server.js
+   ```
+
+4. Open your browser and go to `http://localhost:3000/`. You should see a lovely message saying, “Hello, Node.js World!”
+
+**What’s Happening Here?**  
+- **require('http'):** This loads the built-in HTTP module that allows Node.js to create web servers.
+- **http.createServer():** We create a server that listens for incoming requests and sends a response.
+- **res.end():** Ends the response process and sends the “Hello, Node.js World!” message to the browser.
+- **server.listen(3000):** The server starts listening on port 3000, waiting for connections.
+
+<details>
+  <summary>Hint 1</summary>
+
+  If you get an error about "port already in use," it means something is already running on port 3000. You can either stop that process or change the port number in the `server.listen()` line to something else, like 4000.
+</details>
+
+<details>
+  <summary>Hint 2</summary>
+
+  You can modify the response by changing the text in `res.end()`. Try making it print something else, like “Hello from Node.js!”.
+</details>
+
+---
+
+### Challenge 1: Serve HTML Content  
+Let’s level up! Instead of sending plain text, let’s make our server respond with actual HTML content.
+
+#### Task:
+1. Modify your server code to serve an HTML page.
+2. Bonus: Add a heading and a paragraph to the HTML.
+
+#### Starter Code:
+```javascript
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html');
+  res.end('<h1>Welcome to Node.js</h1><p>This is your first HTML page served by Node.js!</p>');
+});
+
+server.listen(3000, () => {
+  console.log('Server running at http://localhost:3000/');
+});
+```
+
+---
+
+### Challenge 2: Create a JSON API
+
+Node.js is often used to build APIs, and now it’s your turn to create one! This challenge will have you respond to a request with JSON (JavaScript Object Notation) instead of plain text or HTML.
+
+#### Task:
+1. Modify your server to return JSON data when a request is made.
+2. Your server should respond with some information about a user (e.g., name, age, hobbies).
+
+#### Starter Code:
+```javascript
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'application/json');
+  const user = {
+    name: 'John Doe',
+    age: 30,
+    hobbies: ['coding', 'hiking', 'reading']
+  };
+  res.end(JSON.stringify(user));
+});
+
+server.listen(3000, () => {
+  console.log('Server running at http://localhost:3000/');
+});
+```
+
+<details>
+  <summary>Hint 1</summary>
+
+  Use `JSON.stringify()` to convert your JavaScript object into a JSON string before sending it in the response.
+</details>
+
+<details>
+  <summary>Hint 2</summary>
+
+  You can modify the JSON object to include whatever data you want. Try adding more fields, like `location` or `favorite programming language`.
+</details>
+
+---
+
+### Challenge 3: Create a Simple Router  
+In this challenge, you'll create different routes for your server. Depending on the URL the user visits, your server will respond with different content.
+
+#### Task:
+1. Set up routes for the following:
+   - `/`: Respond with a welcome message.
+   - `/about`: Respond with an "About Me" page.
+   - `/contact`: Respond with contact info.
+2. Bonus: Create a 404 page for any routes that don't exist.
+
+#### Starter Code:
+```javascript
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html');
+
+  if (req.url === '/') {
+    res.end('<h1>Welcome to my Node.js Server</h1>');
+  } else if (req.url === '/about') {
+    res.end('<h1>About Me</h1><p>This is a simple Node.js server.</p>');
+  } else if (req.url === '/contact') {
+    res.end('<h1>Contact</h1><p>Email me at node@js.com</p>');
+  } else {
+    res.statusCode = 404;
+    res.end('<h1>404 - Page Not Found</h1>');
+  }
+});
+
+server.listen(3000, () => {
+  console.log('Server running at http://localhost:3000/');
+});
+```
+
+<details>
+  <summary>Hint 1</summary>
+
+  Use `req.url` to check the path the user is visiting, and respond accordingly.
+</details>
+
+<details>
+  <summary>Hint 2</summary>
+
+  Make sure to set the `statusCode` to `404` for any unknown routes.
+</details>
+
+---
+
+### Conclusion: You’re a Node.js Ninja Now!
+
+Congratulations! You’ve just leveled up your JavaScript skills by diving into the world of Node.js. You’ve set up servers, served HTML, JSON, and even created a simple router. Node.js is a powerful tool, and you’ve just scratched the surface. Keep experimenting, building, and pushing your limits—who knows, you might be the next back-end wizard the world is waiting for!
+
