@@ -92,6 +92,11 @@ const config = {
                 docId: 'itmanagement/intro',
                 label: 'IT Management',
               },
+              {
+                type: 'doc',
+                docId: 'bigdataprogramming/intro',
+                label: 'Big Data Programming',
+              },
               
             ]
           },
