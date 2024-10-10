@@ -1,0 +1,176 @@
+---
+sidebar_position: 5
+---
+
+# Data Types and Structures
+
+Python is a versatile programming language, widely used for web development, data analysis, machine learning, and automation. A key strength is its simplicity, making it accessible for beginners and powerful for experts. Here’s a comprehensive look at Python’s data types and structures:
+
+---
+
+### 1. **Data Types**
+
+Python has several built-in data types that form the foundation for all operations. The main types include:
+
+- **Numeric Types**  
+  Python supports integers, floating-point numbers, and complex numbers.
+
+  ```python
+  # Integer
+  x = 5
+
+  # Float
+  y = 3.14
+
+  # Complex number
+  z = 2 + 3j
+  ```
+
+- **Boolean**  
+  The Boolean type has two values: `True` and `False`.
+
+  ```python
+  is_python_fun = True
+  ```
+
+- **Strings**  
+  Strings are sequences of characters enclosed in single, double, or triple quotes.
+
+  ```python
+  greeting = "Hello, World!"
+  multi_line_string = '''This is
+  a multi-line string.'''
+  ```
+
+  Strings are immutable, meaning they cannot be changed after creation. You can access elements of a string via indexing and slicing:
+
+  ```python
+  # Indexing
+  first_char = greeting[0]  # H
+
+  # Slicing
+  hello = greeting[:5]  # Hello
+  ```
+
+- **None Type**  
+  Represents the absence of a value and is used to signify 'nothing' or 'null.'
+
+  ```python
+  x = None
+  ```
+
+---
+
+### 2. **Data Structures**
+
+Python has built-in data structures that allow you to store and manipulate data effectively.
+
+- **Lists**  
+  Lists are mutable sequences that can contain items of any data type.
+
+  ```python
+  fruits = ["apple", "banana", "cherry"]
+  fruits.append("orange")
+  ```
+
+  Lists are ordered, and you can access elements using indices.
+
+  ```python
+  first_fruit = fruits[0]  # "apple"
+  ```
+
+- **Tuples**  
+  Tuples are similar to lists, but they are immutable, meaning their contents cannot be changed once created.
+
+  ```python
+  coordinates = (10, 20)
+  ```
+
+  Tuples are useful for storing data that should not change.
+
+- **Dictionaries**  
+  A dictionary stores data in key-value pairs. Dictionaries are mutable and unordered.
+
+  ```python
+  student = {"name": "John", "age": 21}
+  student["grade"] = "A"
+  ```
+
+  Access values by their keys:
+
+  ```python
+  name = student["name"]  # "John"
+  ```
+
+- **Sets**  
+  Sets are unordered collections of unique elements. They are useful when you want to avoid duplicates.
+
+  ```python
+  unique_numbers = {1, 2, 3, 3, 4}
+  ```
+
+  Sets can be modified and support operations like union, intersection, and difference.
+
+  ```python
+  odd_numbers = {1, 3, 5}
+  even_numbers = {2, 4, 6}
+  union_set = odd_numbers | even_numbers  # {1, 2, 3, 4, 5, 6}
+  ```
+
+---
+
+### 3. **Advanced Structures**
+
+In addition to basic data structures, Python offers more specialized structures for advanced use cases:
+
+- **Lists Comprehensions**  
+  These provide a concise way to create lists using loops and conditions.
+
+  ```python
+  squares = [x**2 for x in range(10)]
+  ```
+
+- **Dictionary Comprehensions**  
+  Similar to list comprehensions but used to construct dictionaries.
+
+  ```python
+  squares_dict = {x: x**2 for x in range(10)}
+  ```
+
+- **Tuples as Immutable Sequences**  
+  Although immutable, tuples are often used for returning multiple values from a function.
+
+  ```python
+  def get_coordinates():
+      return (10, 20)
+
+  x, y = get_coordinates()
+  ```
+
+---
+
+### 4. **Type Conversion**
+
+Python allows easy conversion between different types using built-in functions:
+
+- Convert a string to an integer:
+
+  ```python
+  num_str = "100"
+  num_int = int(num_str)
+  ```
+
+- Convert an integer to a string:
+
+  ```python
+  num = 100
+  num_str = str(num)
+  ```
+
+Type conversion is essential when working with input/output or combining different types.
+
+---
+
+### Conclusion
+
+Python’s rich set of data types and structures allows developers to build scalable, readable, and efficient applications. Mastering them is essential for anyone looking to dive deep into Python programming.

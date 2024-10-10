@@ -1,0 +1,195 @@
+---
+sidebar_position: 10
+---
+
+# Functions
+
+Functions in Python are reusable blocks of code designed to perform a specific task. They help organize code, promote reusability, and simplify complex operations.
+
+---
+
+### 1. **Defining a Function**
+
+A function is defined using the `def` keyword, followed by the function name and parentheses. Here's the basic syntax:
+
+```python
+def function_name(parameters):
+    # code to be executed
+    return result
+```
+
+Example:
+
+```python
+def greet(name):
+    return f"Hello, {name}!"
+```
+
+This function takes a `name` parameter and returns a greeting.
+
+---
+
+### 2. **Calling a Function**
+
+To execute a function, simply "call" it by writing its name followed by parentheses. You can pass arguments that correspond to the function’s parameters.
+
+```python
+print(greet("Alice"))  # Output: Hello, Alice!
+```
+
+---
+
+### 3. **Parameters and Arguments**
+
+- **Parameters** are variables listed inside the function definition. 
+- **Arguments** are the actual values passed when calling the function.
+
+```python
+def add(a, b):
+    return a + b
+
+print(add(3, 4))  # Output: 7
+```
+
+Functions can accept multiple parameters, and Python also supports default parameters:
+
+```python
+def greet(name="stranger"):
+    return f"Hello, {name}!"
+
+print(greet())  # Output: Hello, stranger!
+```
+
+---
+
+### 4. **Return Statement**
+
+Functions in Python use the `return` statement to send a result back to the caller. If no `return` is used, the function returns `None` by default.
+
+```python
+def square(x):
+    return x * x
+
+print(square(5))  # Output: 25
+```
+
+---
+
+### 5. **Positional and Keyword Arguments**
+
+- **Positional arguments** are passed to functions based on their order.
+- **Keyword arguments** are passed by explicitly specifying the parameter names.
+
+```python
+def introduce(name, age):
+    return f"My name is {name} and I am {age} years old."
+
+print(introduce("Alice", 30))            # Positional arguments
+print(introduce(age=30, name="Alice"))   # Keyword arguments
+```
+
+---
+
+### 6. **Arbitrary Arguments**
+
+If you don’t know how many arguments a function will receive, use `*args` for positional arguments or `**kwargs` for keyword arguments.
+
+- **`*args`** allows passing a variable number of arguments as a tuple.
+
+  ```python
+  def sum_numbers(*args):
+      return sum(args)
+
+  print(sum_numbers(1, 2, 3))  # Output: 6
+  ```
+
+- **`**kwargs`** allows passing a variable number of keyword arguments as a dictionary.
+
+  ```python
+  def print_info(**kwargs):
+      for key, value in kwargs.items():
+          print(f"{key}: {value}")
+
+  print_info(name="Alice", age=30)  # Output: name: Alice, age: 30
+  ```
+
+---
+
+### 7. **Lambda Functions**
+
+Lambda functions are small anonymous functions defined using the `lambda` keyword. They can have any number of arguments but only one expression.
+
+```python
+square = lambda x: x * x
+print(square(5))  # Output: 25
+```
+
+These are often used for short, throwaway functions.
+
+---
+
+### 8. **Scope of Variables**
+
+The scope of a variable determines where it can be accessed in a program:
+
+- **Local variables**: Declared inside a function and only accessible within that function.
+- **Global variables**: Declared outside all functions and accessible from any function in the program.
+
+```python
+x = 10  # Global variable
+
+def my_function():
+    x = 5  # Local variable
+    print(x)
+
+my_function()  # Output: 5
+print(x)       # Output: 10
+```
+
+To modify a global variable inside a function, use the `global` keyword:
+
+```python
+def update_global():
+    global x
+    x = 20
+```
+
+---
+
+### 9. **Recursive Functions**
+
+A function that calls itself is known as a recursive function. It’s useful for solving problems that can be broken down into smaller, similar problems (e.g., calculating factorials).
+
+```python
+def factorial(n):
+    if n == 1:
+        return 1
+    return n * factorial(n - 1)
+
+print(factorial(5))  # Output: 120
+```
+
+Recursive functions need a **base case** to stop the recursion and avoid infinite loops.
+
+---
+
+### 10. **Higher-Order Functions**
+
+Functions that accept other functions as arguments or return functions are called higher-order functions.
+
+Example using `map()` to apply a function to each item in a list:
+
+```python
+def square(x):
+    return x * x
+
+numbers = [1, 2, 3, 4]
+squared_numbers = map(square, numbers)
+print(list(squared_numbers))  # Output: [1, 4, 9, 16]
+```
+
+---
+
+### Conclusion
+
+Functions are one of the most powerful tools in Python, enabling code modularity, reusability, and efficiency. By mastering them, you will significantly improve your ability to write clear, maintainable code.

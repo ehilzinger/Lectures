@@ -1,0 +1,277 @@
+---
+sidebar_position: 99
+---
+
+# Coding Challenges
+## Hone Your Skills from Beginner to Advanced
+
+Welcome to the Python coding challenge corner! These challenges are designed to help you grow your problem-solving abilities, solidify your understanding of Python, and level up your coding game. Each challenge is followed by two collapsible hints to give you some guidance if needed—without spoiling the fun! Start easy and gradually work your way up.
+
+---
+
+### Challenge 1: Sorting an Array (Easy)
+
+**Description:**  
+Write a function that takes an array of numbers and returns a sorted version of the array in ascending order.
+
+```python
+def sort_array(arr):
+    # Your code here
+```
+
+Example:
+
+```python
+numbers = [5, 2, 9, 1, 5, 6]
+print(sort_array(numbers))  # Output: [1, 2, 5, 5, 6, 9]
+```
+
+<details>  
+  <summary>Hint 1: Built-in Functions</summary>  
+  Python has a built-in `sorted()` function to sort a list.  
+</details>
+
+---
+
+### Challenge 2: Reverse a String (Easy)
+
+**Description:**  
+Write a function that reverses a given string.
+
+```python
+def reverse_string(s):
+    # Your code here
+```
+
+Example:
+
+```python
+s = "hello"
+print(reverse_string(s))  # Output: "olleh"
+```
+
+<details>  
+  <summary>Hint 1: Slicing</summary>  
+  In Python, you can reverse a string using slicing `s[::-1]`.  
+</details>
+
+---
+
+### Challenge 3: FizzBuzz (Easy)
+
+**Description:**  
+Write a function that prints numbers from 1 to 100. For multiples of 3, print "Fizz"; for multiples of 5, print "Buzz"; for multiples of both, print "FizzBuzz."
+
+```python
+def fizz_buzz():
+    # Your code here
+```
+
+Example:
+
+```python
+fizz_buzz()  
+# Output: 1, 2, Fizz, 4, Buzz, Fizz, ...
+```
+
+<details>  
+  <summary>Hint 1: Modulo Operator</summary>  
+  Use the modulo operator `%` to check if a number is divisible by another.  
+</details>
+
+---
+
+### Challenge 4: Sum of Array Elements (Easy)
+
+**Description:**  
+Write a function that returns the sum of all elements in an array.
+
+```python
+def sum_array(arr):
+    # Your code here
+```
+
+Example:
+
+```python
+numbers = [1, 2, 3, 4]
+print(sum_array(numbers))  # Output: 10
+```
+
+<details>  
+  <summary>Hint 1: Built-in Functions</summary>  
+  Python has a `sum()` function that can be useful here.  
+</details>
+
+---
+
+### Challenge 5: Palindrome Check (Easy)
+
+**Description:**  
+Write a function that checks if a string is a palindrome (reads the same forward and backward).
+
+```python
+def is_palindrome(s):
+    # Your code here
+```
+
+Example:
+
+```python
+s = "madam"
+print(is_palindrome(s))  # Output: True
+```
+
+<details>  
+  <summary>Hint 1: Reverse the String</summary>  
+  Compare the original string to its reversed version.  
+</details>
+
+---
+
+### Challenge 6: Factorial (Medium)
+
+**Description:**  
+Write a recursive function to compute the factorial of a number.
+
+```python
+def factorial(n):
+    # Your code here
+```
+
+Example:
+
+```python
+print(factorial(5))  # Output: 120
+```
+
+<details>  
+  <summary>Hint 1: Recursive Functions</summary>  
+  A factorial is the product of all positive integers up to a given number. Use recursion to compute it.  
+</details>
+
+---
+
+### Challenge 7: Find the Longest Word (Medium)
+
+**Description:**  
+Write a function that returns the longest word in a given sentence.
+
+```python
+def longest_word(sentence):
+    # Your code here
+```
+
+Example:
+
+```python
+sentence = "Python is fun to learn"
+print(longest_word(sentence))  # Output: "Python"
+```
+
+<details>  
+  <summary>Hint 1: Split the Sentence</summary>  
+  Use the `split()` method to divide the sentence into words.  
+</details>
+
+---
+
+### Challenge 8: Merge Two Sorted Arrays (Medium)
+
+**Description:**  
+Write a function that merges two sorted arrays into one sorted array.
+
+```python
+def merge_sorted_arrays(arr1, arr2):
+    # Your code here
+```
+
+Example:
+
+```python
+arr1 = [1, 3, 5]
+arr2 = [2, 4, 6]
+print(merge_sorted_arrays(arr1, arr2))  # Output: [1, 2, 3, 4, 5, 6]
+```
+
+<details>  
+  <summary>Hint 1: Sorting</summary>  
+  Python’s `sorted()` can help to sort the merged arrays.  
+</details>
+
+---
+
+### Challenge 9: Remove Duplicates from an Array (Easy)
+
+**Description:**  
+Write a function that removes duplicate values from an array.
+
+```python
+def remove_duplicates(arr):
+    # Your code here
+```
+
+Example:
+
+```python
+numbers = [1, 2, 2, 3, 4, 4]
+print(remove_duplicates(numbers))  # Output: [1, 2, 3, 4]
+```
+
+<details>  
+  <summary>Hint 1: Sets</summary>  
+  A `set` automatically removes duplicates.  
+</details>
+
+---
+
+### Challenge 10: Find Pairs that Sum to Target (Medium)
+
+**Description:**  
+Write a function that finds all unique pairs of numbers in an array that add up to a given target sum.
+
+```python
+def find_pairs(arr, target):
+    # Your code here
+```
+
+Example:
+
+```python
+numbers = [1, 2, 3, 4, 5]
+target = 6
+print(find_pairs(numbers, target))  # Output: [(1, 5), (2, 4)]
+```
+
+<details>  
+  <summary>Hint 1: Complements</summary>  
+  For each element, look for its complement (target - element) in the array.  
+</details>
+
+---
+
+### Challenge 11: Binary Search (Medium)
+
+**Description:**  
+Write a binary search function that finds the index of a target element in a sorted array. Return -1 if not found.
+
+```python
+def binary_search(arr, target):
+    # Your code here
+```
+
+Example:
+
+```python
+arr = [1, 2, 3, 4, 5]
+target = 4
+print(binary_search(arr, target))  # Output: 3
+```
+
+<details>  
+  <summary>Hint 1: Divide and Conquer</summary>  
+  Continuously divide the search range in half to narrow down where the target might be.  
+</details>
+---
+
+By tackling these challenges, you'll sharpen your Python skills and get ready to solve real-world problems with greater efficiency and confidence!
