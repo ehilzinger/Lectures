@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Big Data Basics
+# 1: Big Data Basics
 
 ### **1. Big Data Use Cases**
 **Task**: Research and present **real-world examples** of Big Data applications across different industries (e.g., healthcare, finance, retail, social media).
