@@ -1,0 +1,195 @@
+---
+sidebar_position: 25
+---
+
+# Introduction to Pandas for Big Data Programming
+
+#### Overview
+Pandas is a powerful and flexible Python library used for data manipulation and analysis, making it essential for working with structured data. It's especially valuable in **Big Data Programming** due to its ability to handle large datasets efficiently. This module will provide an introduction to using Pandas for common tasks like data cleaning, transformation, and analysis, with a focus on practical exercises to solidify key concepts.
+
+#### Learning Objectives
+- Understand the basic structures of Pandas: Series and DataFrames.
+- Learn how to manipulate, filter, and clean data.
+- Perform data analysis using grouping, merging, and aggregation techniques.
+- Work with large datasets efficiently.
+- Apply Pandas in practical business scenarios.
+
+---
+
+### 1. Getting Started with Pandas
+
+#### What is Pandas?
+Pandas is a high-level Python library built on top of NumPy that provides data structures and functions designed to work with structured data (like tables or Excel files). It's widely used in data science, business intelligence, and finance due to its ease of use and versatility.
+
+#### Key Concepts
+- **Series**: A one-dimensional array-like object, similar to a list or a column in a spreadsheet.
+- **DataFrame**: A two-dimensional table of data, similar to an Excel sheet or a database table.
+
+#### Installation
+Make sure you have Pandas installed:
+```bash
+pip install pandas
+```
+
+#### Basic Usage Example
+```python
+import pandas as pd
+
+# Create a simple DataFrame
+data = {'Name': ['Alice', 'Bob', 'Charlie'],
+        'Age': [25, 30, 35],
+        'Salary': [50000, 60000, 70000]}
+df = pd.DataFrame(data)
+
+print(df)
+```
+
+---
+
+### 2. Data Manipulation Basics
+
+#### Reading and Writing Data
+Pandas supports reading data from various formats such as CSV, Excel, JSON, SQL, etc.
+```python
+# Read from CSV
+df = pd.read_csv('data.csv')
+
+# Write to CSV
+df.to_csv('output.csv', index=False)
+```
+
+#### Selecting Data
+DataFrames allow easy selection and filtering of rows and columns:
+```python
+# Selecting a column
+print(df['Name'])
+
+# Selecting multiple columns
+print(df[['Name', 'Salary']])
+
+# Selecting rows using conditions
+print(df[df['Age'] > 30])
+```
+
+#### Exercise 1: Basic DataFrame Operations
+1. Create a DataFrame with the following data: employees' names, their ages, departments, and monthly salaries.
+2. Select only those employees older than 30.
+3. Display only the `Name` and `Salary` columns.
+
+---
+
+### 3. Data Cleaning and Transformation
+
+#### Handling Missing Data
+Big data often contains missing or corrupt data, and Pandas offers various ways to handle this:
+```python
+# Checking for missing values
+print(df.isnull())
+
+# Filling missing values
+df['Salary'].fillna(0, inplace=True)
+
+# Dropping rows with missing data
+df.dropna(inplace=True)
+```
+
+#### Modifying Data
+You can easily modify the data within DataFrames:
+```python
+# Adding a new column
+df['Annual Salary'] = df['Salary'] * 12
+
+# Applying a function to a column
+df['Age Group'] = df['Age'].apply(lambda x: 'Young' if x < 30 else 'Old')
+```
+
+#### Exercise 2: Data Cleaning
+1. Load a dataset (use any CSV file with missing data).
+2. Identify missing values.
+3. Replace missing values with the mean for numerical columns and a placeholder (e.g., "Unknown") for text columns.
+4. Add a new column calculating the annual salary from monthly salary.
+
+---
+
+### 4. Grouping, Aggregating, and Analyzing Data
+
+#### Grouping Data
+Often, we need to group data based on a certain column (e.g., departments, categories) and perform operations like sum, mean, etc.
+```python
+# Group by department and calculate the average salary
+grouped = df.groupby('Department')['Salary'].mean()
+
+print(grouped)
+```
+
+#### Aggregation
+Pandas allows for multiple aggregations simultaneously:
+```python
+# Multiple aggregations
+df.groupby('Department').agg({
+    'Salary': ['mean', 'sum'],
+    'Age': 'max'
+})
+```
+
+#### Exercise 3: Grouping and Aggregation
+1. Group the employees by department and calculate the average salary for each department.
+2. Find the department with the highest average salary.
+3. Count the number of employees in each department.
+
+---
+
+### 5. Merging and Joining DataFrames
+
+#### Joining DataFrames
+Combining data from multiple sources is a common task, and Pandas provides functions for merging and joining:
+```python
+# Merging two DataFrames
+df1 = pd.DataFrame({'EmployeeID': [1, 2, 3], 'Name': ['Alice', 'Bob', 'Charlie']})
+df2 = pd.DataFrame({'EmployeeID': [1, 2, 4], 'Department': ['HR', 'Finance', 'IT']})
+
+merged_df = pd.merge(df1, df2, on='EmployeeID', how='inner')
+print(merged_df)
+```
+
+#### Exercise 4: Merging Data
+1. Create two DataFrames: one containing employee details (ID, name, age) and another containing salary information (ID, department, salary).
+2. Merge them based on `EmployeeID`.
+3. Display the final combined DataFrame.
+
+---
+
+### 6. Working with Large Datasets
+
+#### Efficient Data Handling
+Pandas offers ways to handle large datasets using techniques like chunking and memory optimization.
+```python
+# Reading in chunks
+chunk_iter = pd.read_csv('large_data.csv', chunksize=1000)
+
+for chunk in chunk_iter:
+    print(chunk.head())
+```
+
+#### Exercise 5: Chunking
+1. Load a large dataset in chunks.
+2. Calculate the sum of a column for each chunk.
+3. Combine the results from all chunks into a final summary.
+
+---
+
+### 7. Practical Business Application: Analyzing Sales Data
+
+#### Scenario: Sales Analysis
+You work for a retail company, and you're tasked with analyzing sales data to determine the best-selling products and regions.
+
+#### Tasks:
+1. Load the sales data (CSV file).
+2. Clean the data by removing rows with missing values and handling outliers.
+3. Group the data by region and calculate total sales for each region.
+4. Identify the top 5 best-selling products.
+
+---
+
+### Summary
+Pandas is a powerful tool for business information technology students to handle, manipulate, and analyze data. By working through the exercises, students will gain practical experience in using Pandas for data analysis tasks commonly encountered in business environments.
