@@ -1,0 +1,8 @@
+{
+  "label": "Exercises",
+  "position": 99,
+  "link": {
+    "type": "generated-index",
+    "description": "Data modeling to learn about."
+  }
+}

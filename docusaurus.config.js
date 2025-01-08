@@ -101,6 +101,18 @@ const config = {
             ]
           },
           {
+            type: 'dropdown',
+            label: 'Courses',
+            position: 'left',
+            items: [
+              {
+                type: 'doc',
+                docId: 's4d430/intro',
+                label: 'S4D430'
+              }
+            ]
+          },
+          {
             type: 'doc',
             docId: 'scientific/intro',
             position: 'left',
