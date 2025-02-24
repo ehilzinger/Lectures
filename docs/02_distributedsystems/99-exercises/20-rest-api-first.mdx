@@ -1,0 +1,182 @@
+---
+sidebar_position: 5
+---
+
+# Beginner's Guide to Building a REST API with Node.js
+
+**Introduction**
+Welcome to this beginner-friendly guide to creating your first REST API using Node.js! This tutorial will take you through the fundamental principles of REST, setting up your development environment, and building a simple API step by step. By the end of this guide, you will have a working REST API and an understanding of core RESTful concepts.
+
+---
+
+## **1. Understanding REST**
+
+REST (Representational State Transfer) is an architectural style for designing networked applications. RESTful APIs follow a set of principles to ensure scalability, maintainability, and efficiency.
+
+### **Key REST Principles:**
+
+- **Statelessness:** Each request from a client must contain all the necessary information to process it.
+- **Client-Server Architecture:** The client and server are separate entities communicating through HTTP.
+- **Uniform Interface:** Consistent naming conventions and methods (GET, POST, PUT, DELETE).
+- **Resource-Based:** Everything is treated as a resource, represented by a URL.
+
+---
+
+## **2. Setting Up Your Development Environment**
+
+Before we begin coding, let’s set up our environment step by step.
+
+### **Step 1: Install Node.js**
+
+Download and install the latest LTS version of [Node.js](https://nodejs.org/). You can verify the installation by running:
+
+```sh
+node -v
+npm -v
+```
+
+### **Step 2: Create a Project Directory**
+
+Open your terminal and run:
+
+```sh
+mkdir my-rest-api
+cd my-rest-api
+```
+
+### **Step 3: Initialize a Node.js Project**
+
+Run the following command inside your project directory to create a `package.json` file:
+
+```sh
+npm init -y
+```
+
+This file will manage dependencies and project configurations.
+
+### **Step 4: Install Express.js**
+
+Express is a popular framework for building APIs with Node.js.
+
+```sh
+npm install express
+```
+
+---
+
+## **3. Creating Your First REST API**
+
+Now, let's write our first API.
+
+### **Step 1: Create an `index.js` File**
+
+Create a new file `index.js` and add the following code:
+
+```javascript
+const express = require("express");
+const app = express();
+const port = 3000;
+
+app.use(express.json()); // Middleware to parse JSON requests
+
+// Sample data
+let books = [
+  { id: 1, title: "The Great Gatsby", author: "F. Scott Fitzgerald" },
+  { id: 2, title: "1984", author: "George Orwell" },
+];
+
+// GET all books
+app.get("/books", (req, res) => {
+  res.json(books);
+});
+
+// GET a single book by ID
+app.get("/books/:id", (req, res) => {
+  const book = books.find((b) => b.id == req.params.id);
+  book ? res.json(book) : res.status(404).json({ message: "Book not found" });
+});
+
+// POST a new book
+app.post("/books", (req, res) => {
+  const newBook = { id: books.length + 1, ...req.body };
+  books.push(newBook);
+  res.status(201).json(newBook);
+});
+
+// DELETE a book
+app.delete("/books/:id", (req, res) => {
+  books = books.filter((b) => b.id != req.params.id);
+  res.status(204).send();
+});
+
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}`);
+});
+```
+
+### **Step 2: Run the API**
+
+Start your server with:
+
+```sh
+node index.js
+```
+
+If everything is set up correctly, you should see:
+
+```
+Server running at http://localhost:3000
+```
+
+---
+
+## **4. Testing Your API with Insomnia**
+
+[Insomnia](https://insomnia.rest/) is a tool for testing API requests.
+
+1. Download and install Insomnia.
+2. Open Insomnia and create a new request.
+3. **GET** `http://localhost:3000/books` - Retrieves all books.
+4. **GET** `http://localhost:3000/books/1` - Retrieves a specific book.
+5. **POST** `http://localhost:3000/books` - Adds a new book (Body: JSON format).
+6. **DELETE** `http://localhost:3000/books/1` - Removes a book.
+
+---
+
+## **5. Exercises**
+
+Try the following exercises to deepen your understanding. **No direct solutions are provided—experiment and learn!**
+
+### **Exercise 1: Add a New Endpoint**
+
+Modify your API to allow users to **update** an existing book using a `PUT` request.
+
+- The request should accept a book ID and update its title and/or author.
+- Test the endpoint using Insomnia.
+
+### **Exercise 2: Implement Error Handling**
+
+Currently, our API does not handle errors effectively. Improve it by:
+
+- Returning a 400 status if required fields are missing in a `POST` request.
+- Returning a 404 status if a book ID does not exist in a `PUT` or `DELETE` request.
+
+### **Exercise 3: Filter Books by Author**
+
+Add support for query parameters, allowing users to retrieve books by a specific author using:
+
+```
+GET /books?author=George%20Orwell
+```
+
+---
+
+## **6. Conclusion & Next Steps**
+
+Congratulations! You've built your first REST API with Node.js and Express. Next steps:
+
+- Learn about middleware and authentication.
+- Explore databases (MongoDB, PostgreSQL).
+- Implement error handling and validation.
+
+Happy coding! 🚀
