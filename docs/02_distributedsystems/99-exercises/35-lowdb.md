@@ -84,6 +84,27 @@ app.post("/users", async (req, res) => {
 });
 ```
 
+#### Example: Updating Data
+
+Modify your `PUT` route to update an existing entry:
+
+```javascript
+app.put("/users/:id", async (req, res) => {
+  await db.read();
+  const userId = req.params.id;
+  const updatedUser = req.body;
+  const index = db.data.users.findIndex((user) => user.id === userId);
+
+  if (index !== -1) {
+    db.data.users[index] = { ...db.data.users[index], ...updatedUser };
+    await db.write();
+    res.json(db.data.users[index]);
+  } else {
+    res.status(404).json({ message: "User not found" });
+  }
+});
+```
+
 #### Example: Deleting Data
 
 Modify your `DELETE` route to remove an entry:
@@ -114,6 +135,14 @@ curl -X GET http://localhost:3000/users
 curl -X POST http://localhost:3000/users \
      -H "Content-Type: application/json" \
      -d '{"id": "1", "name": "John Doe"}'
+```
+
+#### Update a User
+
+```sh
+curl -X PUT http://localhost:3000/users/1 \
+     -H "Content-Type: application/json" \
+     -d '{"name": "John Updated"}'
 ```
 
 #### Delete a User
